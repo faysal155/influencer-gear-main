@@ -1,0 +1,60 @@
+/* ------------------
+ Responsive style start
+-------------------  */
+
+/*------------------
+ style for tabs
+ ------------------ */
+@media only screen and (max-width: 992px) {
+  .navbar > nav > a {
+    margin-left: 2px;
+  }
+
+  .products {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .chat > iframe {
+    width: 100%;
+  }
+}
+
+/*---------------------
+   style for mobile
+   ----------------------*/
+
+@media only screen and (max-width: 576px) {
+  header > .navbar {
+    display: none;
+  }
+
+  .first-section {
+    flex-direction: column;
+  }
+
+  .first-section > .half {
+    width: 100%;
+    margin: 1em 0;
+  }
+  .half > h1 {
+    font-size: 30px;
+  }
+
+  .products {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .last-section > .info {
+    width: 100%;
+  }
+
+  .last-section > .chat {
+    display: none;
+  }
+}
+
+/* ------------------
+ Responsive style end
+-------------------  */
